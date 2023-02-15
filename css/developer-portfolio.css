@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*---- Navigation Bar ----*/
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.nav-bar ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+.nav-bar ul li a:hover {
+  background-color: #d505ff;
+  color: #000000;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 10px;
+}
+/*---- Navigation Bar ----*/
+
+/*---- Connect Section AKA Intro ----*/
+#connect {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 834px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+#connect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../developer/source-code.jpg") no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.headings {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.social-media {
+  font-size: 15px;
+  padding: 20px 35px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  outline: none;
+  transition: 0.6s;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+
+.social-media:hover {
+  cursor: pointer;
+  border: 1px solid #03bcff;
+  background: #03bcff;
+  transition: 0.6s;
+  box-shadow: #ffffff;
+  font-weight: bold;
+}
+/*---- Connect Section AKA Intro ----*/
+
+/*---- About Section ----*/
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#pic {
+  display: flex;
+}
+
+#pic img {
+  width: 575px;
+  height: 400px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+#intro p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+/*---- About Section ----*/
+
+/*---- Achievements Section ----*/
+#achievements {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  align-items: center;
+  padding: 20px;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.photo-gallery img {
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+}
+/*---- Achievements Section ----*/
+
+/*---- Interests Section ----*/
+#interests {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  border: 1px solid #000000;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #03bcff 50%, #ffffff 50%);
+  background-size: 100% 200%;
+  transition: all 0.8s;
+}
+
+.box:hover {
+  background-position: left bottom;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 0 20px #ffffff;
+}
+
+.box img {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.box p {
+  font-family: "Poppins", sans-serif;
+}
+/*---- Interests Section ----*/
+
+/*---- Gratitude Section :) ----*/
+#gratitude {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+#gratitude .grat-message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+}
+#gratitude p {
+  color: #ffffff;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 30px;
+}
+/*---- Gratitude Section :) ----*/
+
+/*---- Making the Whole Webpage Responsive ----*/
+@media only screen and (max-width: 700px) {
+  #connect {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 808px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  #connect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../developer/source-code-responsive.jpg") no-repeat center
+      center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  #pic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pic img {
+    width: 375px;
+    height: 375px;
+  }
+
+  #intro h2 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .nav-bar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #connect h1 {
+    margin-left: 30px;
+  }
+
+  #gratitude p {
+    color: #ffffff;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 20px;
+  }
+  .social-media {
+    margin-left: 30px;
+  }
+}
+/*---- Making the Whole Webpage Responsive ----*/
