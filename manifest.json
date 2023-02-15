@@ -1,0 +1,32 @@
+{
+  "name": "YĀTRĀ",
+  "short_name": "yatra",
+  "author": "Supun Wijesooriya",
+  "start_url": "index.html",
+  "description": "We'll guide you to explore the beauty of Ceylon (Sri Lanka)",
+  "icons": [
+    {
+      "src": "./android-chrome-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#03bcff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "any"
+}

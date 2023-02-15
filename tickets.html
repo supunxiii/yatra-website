@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ticket booking application">
+    <meta name="author" content="Supun Wijesooriya">
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Book Your Tickets!</title>
+    <link rel="stylesheet" href="css/yatra.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="stylesheet" href="css/tickets.css">
+    
+  </head>
+
+  <body>
+    <!-- Header  -->
+    <section class="activities-header">
+      <nav>
+        <a href="index.html" target="_blank"
+          ><img src="images/logo.png" alt="logo"
+        /></a>
+        <div class="navigation-links" id="navLinks">
+          <ul>
+            <li><a href="index.html" target="_blank">HOME</a></li>
+            <li><a href="wildlife.html" target="_blank">WILDLIFE</a></li>
+            <li><a href="beaches.html" target="_blank">BEACHES</a></li>
+            <li><a href="heritage.html" target="_blank">HERITAGE</a></li>
+            <li><a href="activities.html" target="_blank">ACTIVITIES</a></li>
+            <li><a href="contactus.html" target="_blank">CONTACT</a></li>
+            <li><a href="purchases.html" target="_blank">PURCHASES</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Activities</h1>
+
+    <div class="ticket-container">
+      <h2>BOOK YOUR TICKET</h2>
+    </div> 
+
+    <div class="container">
+        <table class="container">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Choice Of Ticket: </label><label class="validation-error hide" id="ChoiceValidationError"></label>
+                        <select name="pass" id="pass">
+                        <option value="Adult Local Pass">Adult Local Pass</option>
+                        <option value="Adult Foreiger Pass">Adult
+                           Foreiger Pass</option>
+                        <option value="Foreiger Child Pass"> Foreiger Child Pass</option>
+                           <option value="Child Pass Below Age 15"> Child Pass Below Age 15</option>
+                              <option value="Child Pass Below Age 6"> Child Pass Below Age 6</option>
+                              <option value="Local Adult and Child Pass">Local Adult and Child Pass</option>
+                              <option value="Foreiger Adult and Child Pass">Foreiger Adult and Child Pass</option>
+                      </select>
+                    </div>
+                    <div>
+                        <label>Number of Tickets: </label>
+                        <input type="Number" name="NumberOfPersons" id="NumberOfPersons" required>
+                    </div>
+                    <div>
+                        <label>Duration: </label>
+                        <select name="Days" id="Days">
+                        <option value="3Hours">3Hours</option>
+                        <option value="HalfDay">Half Day</option>
+                        <option value="FullDay">Full Day</option>
+                      </select required>                        
+                    </div>
+
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" class="activities-tickets-btn" value="Add to Order">
+                        <input type="submit" class="activities-tickets-btn" id="btnShowMsg" value="Place Order" onClick="calculation()" />
+                    </div>
+                    
+                </form>
+            </td>
+        </tr>
+    </table>
+    
+
+    <table class="list" id="orderDetails" width="80%" >
+      <thead>
+          <tr>
+              <th>Type</th>
+              <th>Number Of Tickets</th>
+              <th>Duration</th>
+              <th>Cost Per Type</th>
+              <th>Overall Cost Per Order</th>
+              <th>Options</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+  </table>
+       </div>
+    </section>
+    <script src="javascript/tickets.js"></script>
+    <script src="main.js"></script>
+    <!-- Header  -->
+
+
+    <!-- Footer  -->
+    <section class="footer">
+      <hr />
+      <br />
+      <h4>YĀTRĀ&reg;</h4>
+      <br />
+      <p class="follow-us">Follow Us 〃＾▽＾〃</p>
+      <p>
+        <br />
+      </p>
+
+      <div class="scroll-up-btn">
+        <a class="scroll-up" href="#">
+          <img
+            class="fa-fa-angle-double-up"
+            src="images/icons/double-arrow.png"
+            alt="back to top"
+          />
+        </a>
+      </div>
+      <ul class="footer-list-social">
+        <li>
+          <a href="https://www.instagram.com/?hl=en" target="_blank"
+            >INSTAGRAM</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.thepostathens.com/article/2021/11/opinion-deleting-tiktok-social-media-algorithm#:~:text=TikTok%20is%20distracting.,some%20swiping%20and%20double%2Dtapping."
+            target="_blank"
+            >TIKTOK</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank">TWITTER</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank">LINKEDIN</a>
+        </li>
+      </ul>
+      <br />
+      <br />
+      <ul class="footer-list">
+        <li>
+          <a href="index.html" target="_blank">HOME</a>
+        </li>
+        <li>
+          <a href="aboutus.html" target="_blank">ABOUT YĀTRĀ</a>
+        </li>
+        <li>
+          <a href="contactus.html" target="_blank">CONTACT US</a>
+        </li>
+        <li>
+          <a href="" target="_blank">PRIVACY POLICY</a>
+        </li>
+        <li>
+          <a href="" target="_blank">TERMS &amp; CONDITIONS</a>
+        </li>
+        <li>
+          <a href="sitemap.html" target="_blank">SITEMAP</a>
+        </li>
+      </ul>
+      <p class="copyright">&copy; 2022 YĀTRĀ. All Rights Reserved.</p>
+    </section>
+
+      
+    <!-- Footer  -->
+  </body>
+</html>
