@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/dambulla-cave-temple.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 3% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 130px;
+}
+
+/*---- Navigation Bar ----*/
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navigation-links ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navigation-links ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navigation-links ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 25px;
+  background: linear-gradient(to right, #ff9ed2, #ff9ed2),
+    linear-gradient(
+      to right,
+      rgba(255, 196, 0, 0.733),
+      rgba(128, 255, 0, 1),
+      rgba(7, 150, 105, 1),
+      rgba(0, 183, 255, 1),
+      rgba(38, 0, 255, 1),
+      rgba(191, 0, 255, 1),
+      rgb(255, 0, 157, 1),
+      rgba(255, 0, 106, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.96s;
+}
+
+.navigation-links ul li a:hover {
+  background-color: #ff9ed2;
+  color: #000000;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 10px;
+  background-size: 0 3px, 100% 3px;
+}
+/*---- Navigation Bar ----*/
+
+.heritage-place-text {
+  width: 90%;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.heritage-place-text h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  margin-top: 135px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  border: 1px solid #ff9ed2;
+  background: #ff9ed2;
+  transition: 0.6s;
+}
+
+.main-image {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+  padding-top: 180px;
+  text-align: center;
+}
+
+.main-image-row {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.intro {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  padding: 50px;
+}
+.main-image-row img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+
+@media only screen and (max-width: 700px) {
+  .heritage-place-text h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+  }
+
+  .heritage-place-text {
+    width: 90%;
+    height: 30%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  nav img {
+    width: 80px;
+  }
+
+  .navigation-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .main-image {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 450px;
+    text-align: center;
+  }
+}
+
+/*---- Homepage - Useful Links ----*/
+.links {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Playfair Display SC", serif;
+}
+.links p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  line-height: 22px;
+  padding: 10px;
+}
+.links-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.links-col {
+  flex-basis: 31%;
+  background: #ff9ed2;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.links-col a:link {
+  text-decoration: none;
+}
+.links-col a:hover {
+  color: #ab00f5;
+}
+
+.links-col h3 {
+  font-family: "Poppins", sans-serif;
+}
+.links-col p {
+  font-size: 15px;
+}
+.links-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 700px) {
+  .links-row {
+    flex-direction: column;
+  }
+}
+/*---- Homepage - Useful Links ----*/
+
+/*----  World Heritage Info  ----*/
+.learn-more {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/sightseeing-dambulla.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+.learn-more h1 {
+  color: #000000;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+  .learn-more h1 {
+    font-size: 20px;
+  }
+}
+/*----  World Heritage Info  ----*/
+
+/*---- Image Link Section----*/
+.link-content {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-image: url("../images/dambulla-cover.jpg");
+  text-align: center;
+  width: 500px;
+  height: 550px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.card-image {
+  background-color: #d830fd;
+  height: 300px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card h2 {
+  padding-top: 310px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.link-content .img-link {
+  text-decoration: none;
+}
+
+.item-1 {
+  background-image: url("../images/dambulla-cave-temple-image-1.jpg");
+}
+
+.item-2 {
+  background-image: url("../images/dambulla-cave-temple-image-2.jpg");
+}
+
+.item-3 {
+  background-image: url("../images/dambulla-cave-temple-image-3.jpg");
+}
+
+.item-4 {
+  background-image: url("../images/dambulla-cave-temple-image-4.jpg");
+}
+
+.card-container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 2s ease;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1)
+  );
+  border-radius: 50px;
+}
+
+.card-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #ab00f5;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+figcaption {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.animation-strip {
+  width: 900px;
+  height: 16px;
+  background-color: #ab00f5;
+  animation-name: y;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+@keyframes y {
+  0% {
+    background-color: rgba(120, 45, 116, 1);
+  }
+  25% {
+    background-color: rgba(130, 51, 197, 1);
+  }
+  50% {
+    background-color: rgba(135, 154, 242, 1);
+  }
+  100% {
+    background-color: rgba(200, 32, 139, 1);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .animation-strip {
+    width: 300px;
+    height: 10px;
+    background-color: #ab00f5;
+    animation-name: y;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  .text {
+    color: #ab00f5;
+    font-size: 11px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+}
+/*---- Image Link Section----*/
+
+/*---- Footer ----*/
+.footer {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 40px 0;
+}
+
+.footer .social {
+  text-align: center;
+  padding: 25px;
+  color: #000000;
+}
+
+.footer .social a {
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+.social-media-icons {
+  display: block;
+  margin: auto;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #61656b;
+}
+
+.footer a:link {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #03bcff;
+}
+
+.footer-list-social a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer-list-social a:hover {
+  color: #d505ff;
+}
+
+.footer hr {
+  width: 75%;
+  margin: auto;
+}
+
+.footer h4 {
+  text-align: center;
+}
+
+.footer .follow-us {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.scroll-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 700px) {
+  .scroll-up {
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+}
+/*---- Footer ----*/

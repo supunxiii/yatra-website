@@ -1,0 +1,1112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-------------- Homepage --------------*/
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/homepage.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  padding: 3% 6%;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 130px;
+}
+
+/*---- Navigation Bar ----*/
+.navigation-links {
+  top: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+.navigation-links ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navigation-links ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navigation-links ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+.navigation-links ul li a:hover {
+  background-color: #03bcff;
+  color: #000000;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 10px;
+}
+/*---- Navigation Bar ----*/
+
+.homepage-text {
+  width: 90%;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.homepage-text h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+}
+
+.homepage-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.homepage-btn:hover {
+  border: 1px solid #03bcff;
+  background: #03bcff;
+  transition: 0.6s;
+}
+
+.bullet-point-list {
+  text-align: center;
+}
+
+.bullet-point-list h1 {
+  margin-bottom: 10px;
+}
+
+.bullet-point-list ul li {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.numbered-list ol li {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.numbered-list {
+  text-align: center;
+}
+
+.numbered-list h1 {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .homepage-text h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+  }
+
+  .homepage-text {
+    width: 90%;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  nav img {
+    width: 80px;
+  }
+
+  .navigation-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/*---- Homepage - Useful Links ----*/
+.links {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Playfair Display SC", serif;
+}
+
+.links p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.links-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-col {
+  flex-basis: 31%;
+  background: rgba(99, 239, 255, 0.2);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.links-col a:link {
+  text-decoration: none;
+}
+
+.links-col a:hover {
+  color: #03bcff;
+}
+
+.links-col h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.links-col p {
+  font-size: 15px;
+}
+
+.links-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 700px) {
+  .links-row {
+    flex-direction: column;
+  }
+}
+/*---- Homepage - Useful Links ----*/
+
+/*---- Contact Us ----*/
+.contact-us {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/contactus.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-us h1 {
+  color: #000000;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+@media only screen and (max-width: 700px) {
+  .contact-us h1 {
+    font-size: 20px;
+  }
+}
+/*---- Contact Us ----*/
+/*-------------- Homepage --------------*/
+
+/*---- About Us Page ----*/
+.aboutus-header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/aboutus1.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #000000;
+  border-radius: 0% 0% 2.5% 2.5%;
+}
+
+.aboutus-header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  margin-top: 100px;
+}
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.aboutus-col {
+  padding: 30px 2px;
+}
+
+.aboutus-col img {
+  width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us h2 {
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-us p {
+  font-family: "Poppins", sans-serif;
+  padding: 15px 0 25px;
+}
+
+.about-us a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.about-us .developer-link {
+  text-decoration: none;
+  color: #03bcff;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+.about-us-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.about-us-btn:hover {
+  border: 1px solid #03bcff;
+  background: #03bcff;
+  transition: 0.6s;
+}
+/*---- About Us Page ----*/
+
+/*---- Wildlife Page ----*/
+.wildlife-header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/wildlife.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #000000;
+  border-radius: 0% 0% 2.5% 2.5%;
+}
+
+.wildlife-header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 120px;
+  margin-top: 150px;
+}
+
+.wildlife {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.wildlife-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.wildlife-col img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.wildlife-col h1 {
+  padding-top: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.wildlife-col figcaption {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.wildlife-col p {
+  padding: 15px 0 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.wildlife-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.wildlife-btn:hover {
+  border: 1px solid #42f548;
+  background: #42f548;
+  transition: 0.6s;
+}
+
+.wildlife hr {
+  width: 50%;
+  margin: auto;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.wildlife iframe {
+  border: 2px solid #000000;
+  margin: 0 auto;
+  display: block;
+}
+
+.wildlife-table {
+  padding: 32px;
+  font-family: "Poppins", sans-serif;
+}
+
+.wildlife-table h2.table-heading {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 32px;
+  padding-bottom: 8px;
+  font-family: "Dancing Script", cursive;
+}
+
+.wildlife-table table {
+  width: 100%;
+  background: #ffffff;
+  color: #61656b;
+  padding: 24px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 15px -8px rgba(0, 0, 0, 0.4);
+}
+
+.wildlife-table table thead tr {
+  background: #61656b;
+  color: #ffffff;
+}
+
+.wildlife-table table td,
+.wildlife-table table th {
+  padding: 16px;
+  text-align: center;
+}
+
+.wildlife-table table tr {
+  border-bottom: 0.2px solid #000000;
+}
+
+@media only screen and (max-width: 700px) {
+  .wildlife-table table thead {
+    display: none;
+  }
+
+  .wildlife-table table td {
+    display: block;
+  }
+
+  .wildlife-table table td::before {
+    content: attr(data-heading) " ";
+    font-weight: bold;
+  }
+
+  .wildlife-header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url(../images/wildlife-responsive.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+    border-radius: 0% 0% 2.5% 2.5%;
+  }
+
+  .wildlife-header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;
+    margin-top: 150px;
+  }
+}
+/*---- Wildlife Page ----*/
+
+/*---- Beaches Page ----*/
+.beaches-header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/beaches.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.beaches-header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 120px;
+  margin-top: 135px;
+  text-align: center;
+}
+
+.beaches {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.beaches-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.beaches-col img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+
+.beaches-col h1 {
+  padding-top: 200px;
+  font-family: "Poppins", sans-serif;
+}
+
+.beaches-col p {
+  padding: 15px 0 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.beaches-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.beaches-btn:hover {
+  border: 1px solid #03bcff;
+  background: #03bcff;
+  transition: 0.6s;
+}
+
+.beaches hr {
+  width: 50%;
+  margin: auto;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.intro {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  .beaches-header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;
+    margin-top: 135px;
+    text-align: center;
+  }
+
+  .intro {
+    margin-bottom: 50px;
+  }
+
+  .beaches-col h1 {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+}
+/*---- Beaches Page ----*/
+
+/*---- Activities Page ----*/
+.activities-header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/activities.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.activities-header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 120px;
+  margin-top: 135px;
+  text-align: center;
+}
+
+.activities-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.activities-intro {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  text-align: center;
+  padding: 50px;
+}
+
+.activities {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.activities-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.activities img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+
+.activities-col h1 {
+  padding-top: 200px;
+  font-family: "Poppins", sans-serif;
+}
+
+.activities-col p {
+  padding: 15px 0 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.activities-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.activities-btn:hover {
+  border: 1px solid #62169c;
+  background: #62169c;
+  transition: 0.6s;
+  color: #ffffff;
+}
+
+.activities hr {
+  width: 50%;
+  margin: auto;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+figcaption {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.in-text {
+  text-decoration: none;
+  color: #03bcff;
+}
+
+@media only screen and (max-width: 700px) {
+  .activities-header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;
+    margin-top: 135px;
+    text-align: center;
+  }
+
+  .activities-intro {
+    margin-bottom: 50px;
+  }
+
+  .activities-col h1 {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+}
+/*---- Activities Page ----*/
+
+/*---- Heritage Page ----*/
+.heritage-header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/heritage1-bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.heritage-header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 120px;
+  margin-top: 135px;
+  text-align: center;
+}
+
+.heritage-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.heritage-intro {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  text-align: center;
+  padding: 50px;
+}
+
+.heritage {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.heritage-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.heritage img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+
+.heritage-col h1 {
+  padding-top: 200px;
+  font-family: "Poppins", sans-serif;
+}
+
+.heritage-col p {
+  padding: 15px 0 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.heritage-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.heritage-btn:hover {
+  border: 1px solid #f5e507;
+  background: #f5e507;
+  transition: 0.6s;
+  color: #000000;
+}
+
+.heritage hr {
+  width: 50%;
+  margin: auto;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+figcaption {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+  .heritage-header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1)
+      ),
+      url(../images/heritage-responsive.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .heritage-header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;
+    margin-top: 135px;
+    text-align: center;
+  }
+
+  .heritage-intro {
+    margin-bottom: 50px;
+  }
+
+  .heritage-col h1 {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+}
+/*---- Heritage Page ----*/
+
+/*---- Hotel Contact Page ----*/
+.contactus-header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/contact-us.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.contactus-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 100px;
+  margin-top: 135px;
+  text-align: center;
+}
+
+.contact-us-content {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/form.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-us-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.contact-us-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-us-col p {
+  color: #61656b;
+}
+
+.contact-icons {
+  padding-right: 10px;
+  font-size: 20px;
+  margin: 10px;
+  margin-right: 30px;
+}
+
+.contact-us-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px 34px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.contact-us-btn:hover {
+  border: 1px solid #03bcff;
+  background: #03bcff;
+  transition: 0.6s;
+  color: #ffffff;
+}
+
+.contact-us-col input,
+.contact-us-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #61656b;
+  font-family: "Poppins", sans-serif;
+}
+
+.phone-icon {
+  width: 25px;
+  height: 25px;
+  padding-left: 18px;
+}
+
+.location-arrow-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.envelope-icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .contactus-header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1)
+      ),
+      url(../images/contact-us-responsive.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .contactus-header h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    margin-top: 135px;
+    text-align: center;
+  }
+
+  input {
+    width: 10%;
+  }
+}
+/*---- Hotel Contact Page ----*/
+
+/*---- Footer ----*/
+.footer {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 40px 0;
+}
+
+.footer .social {
+  text-align: center;
+  padding: 25px;
+  color: #000000;
+}
+
+.footer .social a {
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+.social-media-icons {
+  display: block;
+  margin: auto;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #61656b;
+}
+
+.footer a:link {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #03bcff;
+}
+
+.footer-list-social a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer-list-social a:hover {
+  color: #d505ff;
+}
+
+.footer hr {
+  width: 75%;
+  margin: auto;
+}
+
+.footer h4 {
+  text-align: center;
+}
+
+.footer .follow-us {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.scroll-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 700px) {
+  .scroll-up {
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+}
+/*---- Footer ----*/

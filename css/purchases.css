@@ -1,0 +1,577 @@
+/*---- Header ----*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.purchases-header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/purchases-donations.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.purchases-header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 120px;
+  margin-top: 135px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  padding: 3% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 130px;
+}
+
+/*---- Navigation Bar ----*/
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navigation-links ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navigation-links ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navigation-links ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+.navigation-links ul li a:hover {
+  background-color: #03bcff;
+  color: #000000;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 10px;
+}
+/*---- Navigation Bar ----*/
+
+@media only screen and (max-width: 700px) {
+  .purchases-header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;
+    margin-top: 135px;
+    text-align: center;
+  }
+  nav img {
+    width: 80px;
+  }
+
+  .navigation-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+/*---- Header ----*/
+
+/*---- Purchases ----*/
+.purchase-content {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #03bcff;
+  width: 300px;
+  height: 550px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.card-image {
+  background-color: #d830fd;
+  height: 300px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card h2 {
+  padding-top: 310px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.item-1 {
+  background-image: url("../images/wooden-masks.jpeg");
+}
+
+.item-2 {
+  background-image: url("../images/sourvenirs.jpg");
+}
+
+.item-3 {
+  background-image: url("../images/blue-sapphire-ring.jpg");
+}
+
+.item-4 {
+  background-image: url("../images/Wooden-Cups.jpg");
+}
+
+.item-5 {
+  background-image: url("../images/Wooden-Elephants.jpg");
+}
+
+.item-6 {
+  background-image: url("../images/Wallpainting.jpg");
+}
+
+.item-7 {
+  background-image: url("../images/wooden-moonstone.jpg");
+}
+
+.item-8 {
+  background-image: url("../images/tea-packets.jpg");
+}
+
+.item-9 {
+  background-image: url("../images/wooden-buddha-statue.jpg");
+}
+
+.btn {
+  background-color: #000000;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn :hover {
+  border: 1px solid #61656b;
+  background: #61656b;
+  color: #ffffff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.shop-item-price {
+  background-color: #03bcff;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 70px;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.cart-row {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.cart-total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  display: none;
+}
+
+.btn-danger {
+  display: none;
+}
+
+.cart-quantity-input {
+  font-family: "Poppins", sans-serif;
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
+
+/*---- Purchases ----*/
+
+/*---- Donations ----*/
+.donations-content {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/donations.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.donations-content h1 {
+  color: #000000;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.donations-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.donations-btn:hover {
+  border: 1px solid #03bcff;
+  background: #03bcff;
+  transition: 0.6s;
+}
+
+.donations-content-wildlife {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/leaf-patterns.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.donations-content-wildlife h1 {
+  color: #000000;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.donations-btn-wildlife {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.donations-btn-wildlife:hover {
+  border: 1px solid #f5b8df;
+  background: #f5b8df;
+  transition: 0.6s;
+}
+
+.donations-content-heritage {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/autumn-leaves.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.donations-content-heritage h1 {
+  color: #000000;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.donations-btn-heritage {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 34px;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.donations-btn-heritage:hover {
+  border: 1px solid #f5e507;
+  background: #f5e507;
+  transition: 0.6s;
+}
+
+@media only screen and (max-width: 700px) {
+  .donations-content h1 {
+    font-size: 20px;
+  }
+
+  .donations-content-wildlife h1 {
+    font-size: 20px;
+  }
+
+  .donations-content-heritage h1 {
+    font-size: 20px;
+  }
+
+  .donations-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+}
+/*---- Donations ----*/
+
+/*---- Footer ----*/
+.footer {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 40px 0;
+}
+
+.footer .social {
+  text-align: center;
+  padding: 25px;
+  color: #000000;
+}
+
+.footer .social a {
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+.social-media-icons {
+  display: block;
+  margin: auto;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #61656b;
+}
+
+.footer a:link {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #03bcff;
+}
+
+.footer-list-social a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer-list-social a:hover {
+  color: #d505ff;
+}
+
+.footer hr {
+  width: 75%;
+  margin: auto;
+}
+
+.footer h4 {
+  text-align: center;
+}
+
+.footer .follow-us {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.scroll-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 700px) {
+  .scroll-up {
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+}
+/*---- Footer ----*/
