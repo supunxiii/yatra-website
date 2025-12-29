@@ -223,7 +223,6 @@ yatra-website/
 This project was developed in **July 2022** by:
 
 - **Supun Wijesooriya** - Full-Stack Developer
-  - GitHub: [@supunxiii](https://github.com/supunxiii)
 
 ## Live Demo
 
