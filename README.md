@@ -218,9 +218,9 @@ yatra-website/
 
 ## Developer
 
-This project was developed in **July 2022** by:
+This project was developed by:
 
-- **Supun Wijesooriya** - Full-Stack Developer
+- **Supun Wijesooriya** - Developer
 
 ## Live Demo
 
