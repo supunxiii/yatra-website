@@ -2,8 +2,6 @@
 
 YĀTRĀ is a client-side web application developed to support the Sri Lankan government's post-pandemic tourism revitalisation initiative, created as part of the COMP40004 - Web Development & Operating course. This comprehensive platform provides tourists with detailed information about tourism in Sri Lanka, covering attractions, culture, activities, and travel information.
 
-Designed and developed by Supun Wijesooriya in July 2022.
-
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript (ECMAScript)](https://img.shields.io/badge/JavaScript-ECMAScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000000)
